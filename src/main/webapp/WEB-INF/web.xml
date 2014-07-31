@@ -1,0 +1,10 @@
+<servlets>
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>com.santoshsahoo.webappone.HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+</servlets>
