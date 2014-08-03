@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class HelloServlet extends HttpServlet{
 	@Override
+
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException{
 		PrintWriter writer = resp.getWriter();
 		writer.println("Hello world");

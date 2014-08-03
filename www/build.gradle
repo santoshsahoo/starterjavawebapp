@@ -1,0 +1,24 @@
+apply plugin: 'war'
+war.archiveName "ROOT.war"
+
+/*
+task explodedWar(type: Copy) {
+    into "$buildDir/exploded"
+    with war
+}
+
+war.dependsOn explodedWar
+*/
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'org.apache.logging.log4j:log4j-core:2.0'
+    //providedCompile "javax.servlet:javax.servlet-api:${servletVersion}"
+    providedCompile "javax.servlet:servlet-api:3.+"
+
+    testCompile "junit:junit:4.11"
+}
