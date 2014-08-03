@@ -12,3 +12,4 @@ build
 *.jar
 *.war
 *.ear
+/.gradle
